@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetsheet.css">
+    <link rel="stylesheet" href="productFormStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Projeto Final</title>
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul class="nav_ul">
+                <li class="navLi"><a href="#">Home</a></li>
+                <hr class="navBarHr">
+                <li class="navLi"><a href="#">About</a></li>
+                <hr class="navBarHr">
+                <li class="navLi"><a href="#">Shop</a></li>
+                <hr class="navBarHr">
+                <li class="navLi"><a href="#">Help</a></li>
+                <li id="newProductButton" class="navLi"><a id="newProductText" href="#">New Product</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <form class="ProductForm" action="">
+            <div class="wholeProductBox">
+                <div>
+                    <h2 class="producto">New Product</h2>
+                    <hr>
+                    <div class="leftBox">
+                        <label class="label" for="Item">Product</label>
+                        <input id="productName" class="input" type="text" placeholder="Insert an item">
+                    </div>
+                    <div class="leftBox">
+                        <label class="label" for="Price">Price</label>
+                        <input id="productPrice" class="input" type="text" placeholder="Ej: $200">
+                    </div>
+                    <div class="leftBox">
+                        <label class="label" for="Description">Description</label>
+                        <textarea id="productDescription" name="description"
+                            placeholder="Insert a description"></textarea>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <h2 class="product">Product image</h2>
+                    <hr class="ProductImgHr">
+                    <img src="images.png" alt="" width="230px" height="230px">
+                    <button type="file" id="file" accept="image/*" onchange="show()">Select image</button>
+                </div>
+            </div>
+            <hr class="mainHr">
+            <div class="buttons">
+                <button onclick="clickedButton()" class="addToCart" type="button">Submit</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+    </main>
+    <footer>
+        <nav class="footerNav">
+            <ul class="footerNav_ul">
+                <li class="navFooterLi"><a href="#">Home</a></li>
+                <hr class="navFooterHr">
+                <li class="navFooterLi"><a href="#">About</a></li>
+                <hr class="navFooterHr">
+                <li class="navFooterLi"><a href="#">Shop</a></li>
+                <hr class="navFooterHr">
+                <li class="navFooterLi"><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <h2>Lorem, ipsum dolor</h2>
+    </footer>
+    <script src="shoppingCart.js"></script>
+</body>
+
+</html>

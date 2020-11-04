@@ -1,0 +1,121 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header{
+    display: flex;
+   justify-content: space-between;
+   margin-right: 4%;
+   margin-left: 4%;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.navLi{
+    display: flex;
+    padding: 15px;
+    margin-left: 3px;
+}
+#newProductText{
+    color: white;
+}
+#newProductButton{
+    background-color: grey;
+    border-radius: 3px;
+}
+.navBarHr{
+    margin-top: 15px;
+    height: 15px;
+    width: 1px;
+    background-color: rgb(206, 205, 205);
+}
+/* main  */
+main hr{
+    background-color: rgb(206, 205, 205);
+}
+.optionsWindows{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.hrOprionsCard{
+}
+main div hr{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.next{
+    margin-left: 20%;
+}
+.shoppingCartDiv{
+    width: 500px;
+}
+.shoppingCartDiv hr{
+    margin: 0;
+    padding: 0%;
+}
+.summaryDiv{
+    width: 250px;
+}
+.summaryDiv hr{
+    margin: 0;
+    padding: 0%;
+}
+button{
+    width: 11rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: grey;
+}
+/* summary */
+.shippinDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.subTotalDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.taxesDiv{
+    display: flex;
+    justify-content: space-between 
+}
+.totalDiv{
+    display: flex;
+    justify-content: space-between
+}
+/* footer */
+footer{
+    margin-bottom: 2%;
+    text-align: center;
+}
+.footerNav_ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 30%;
+}
+.imgDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.navFooterHr{
+    height: 15px;
+}

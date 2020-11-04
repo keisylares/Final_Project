@@ -1,0 +1,101 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header{
+    display: flex;
+   justify-content: space-between;
+   margin-right: 4%;
+   margin-left: 4%;
+}
+.nav_ul{
+    display: flex;
+    justify-content: space-between;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.navLi{
+    display: flex;
+    padding: 15px;
+    margin-left: 3px;
+}
+#newProductText{
+    color: white;
+}
+.navBarHr{
+    margin-top: 15px;
+    height: 15px;
+    width: 1px;
+    background-color: rgb(206, 205, 205);
+}
+#newProductButton{
+    background-color: grey;
+    border-radius: 3px;
+}
+/* main section(form) */
+.wholeProductBox{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 5% 18%;
+}
+.leftBox{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    margin-right: 4%;
+    width: 170px;
+}
+input{
+    width: 400px;
+    height: 25px;
+    margin-bottom: 2%;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+}
+.ProductImgHr{
+    height: 1px;
+}
+img{
+    border:rgb(206, 205, 205) solid;
+    margin-bottom: 2%;
+    padding: 3%;
+    border-radius: 3px;
+}
+.buttons{
+    margin-top: 3%;
+    margin-left: 17%;
+}
+button{
+    width: 11rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: grey;
+}
+.mainHr{
+    margin: 0% 18%;
+}
+/* footer */
+footer{
+    margin-bottom: 2%;
+    text-align: center;
+}
+.footerNav_ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 30%;
+}
+.imgDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
