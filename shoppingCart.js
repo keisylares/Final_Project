@@ -1,22 +1,26 @@
-/* let info = document.querySelectorAll('#productName, #productPrice, #productDescription');
-let productName = info[0].value;
-let productPrice = info[1].value;
-let productDescription = info[2].value;
-let totalInfo = [productName, productPrice, productDescription];
+// gettin data from form
+const form = document.getElementById('mainForm');
 
-function clickedButton() {
-    localStorage.setItem(info);
-}
- */
+addToCart.addEventListener("click", (event) => {
+  event.preventDefault();
 
-// image upload
-function Show(){
-    var archivo = document.getElementById("file").files[0];
-    var reader = new FileReader();
-    if (file) {
-      reader.readAsDataURL(archivo);
-      reader.onloadend = function () {
-        document.getElementById("img").src = reader.result;
-      }
+  function items() {
+    let formItems = {
+      product: form.productName.value,
+      price: form.productPrice.value,
+      description: form.productDescription.value,
+      img: form.file.value,
     }
-  }
+    formItems = JSON.stringify(formItems);
+    localStorage.setItem('productStorage', formItems)
+  };
+  // uploading product picture
+  window.addEventListener('load', function () {
+    document.querySelector('input[type="file"]').addEventListener('change', function () {
+      if (this.files && this.files[0]) {
+        var img = document.querySelector('img');
+        img.src = URL.createObjectURL(this.files[0]);
+        img.onload = imageIsLoaded;
+      }
+    });
+  });

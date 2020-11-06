@@ -28,7 +28,7 @@
     </header>
     <main>
         <hr>
-        <form class="ProductForm" action="">
+        <form class="ProductForm" id="myForm" action="">
             <div class="wholeProductBox">
                 <div>
                     <h2 class="producto">New Product</h2>
@@ -51,12 +51,12 @@
                     <h2 class="product">Product image</h2>
                     <hr class="ProductImgHr">
                     <img src="images.png" alt="" width="230px" height="230px">
-                    <button type="file" id="file" accept="image/*" onchange="show()">Select image</button>
+                    <input id="file" type='file'/>
                 </div>
             </div>
             <hr class="mainHr">
             <div class="buttons">
-                <button onclick="clickedButton()" class="addToCart" type="button">Submit</button>
+                <button onclick="clickedButton()" id="addToCart" class="addToCart" type="button">Submit</button>
                 <button class="cancel">Cancel</button>
             </div>
         </form>
