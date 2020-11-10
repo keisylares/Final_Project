@@ -55,6 +55,9 @@ main div hr{
     margin-right: 15%;
     margin-left: 15%;
 }
+#itemsData {
+    display: flex;
+}
 .next{
     margin-left: 20%;
 }
@@ -118,4 +121,32 @@ footer{
 }
 .navFooterHr{
     height: 15px;
+}
+
+.thumb {
+  border: 3px solid #ddd;
+  margin: 5px;
+}
+
+.productSpecs {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.productSpecs .productName {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.productSpecs .productDescription {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.productSpecs .productPrice {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.total {
+  font-weight: bold;
 }

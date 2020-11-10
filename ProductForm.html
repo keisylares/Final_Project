@@ -35,11 +35,11 @@
                     <hr>
                     <div class="leftBox">
                         <label class="label" for="Item">Product</label>
-                        <input id="productName" class="input" type="text" placeholder="Insert an item">
+                        <input id="productName" class="input" type="text" name="name" placeholder="Insert an item">
                     </div>
                     <div class="leftBox">
                         <label class="label" for="Price">Price</label>
-                        <input id="productPrice" class="input" type="text" placeholder="Ej: $200">
+                        <input id="productPrice" class="input" type="text" name="price" placeholder="Ej: $200" pattern="[0-9]">
                     </div>
                     <div class="leftBox">
                         <label class="label" for="Description">Description</label>
@@ -51,7 +51,7 @@
                     <h2 class="product">Product image</h2>
                     <hr class="ProductImgHr">
                     <img src="images.png" alt="" width="230px" height="230px">
-                    <input id="file" type='file'/>
+                    <input id="file" type='file' name="file" />
                 </div>
             </div>
             <hr class="mainHr">
@@ -90,7 +90,6 @@
                 <li class="navFooterLi"><a href="#">Help</a></li>
             </ul>
         </nav>
-        <h2>Lorem, ipsum dolor</h2>
     </footer>
     <script src="shoppingCart.js"></script>
 </body>
