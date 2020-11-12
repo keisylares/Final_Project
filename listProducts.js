@@ -17,4 +17,3 @@ function updatePrices() {
   document.getElementById('taxes').innerHTML = taxes;
   document.getElementById('total').innerHTML = total;
 }
-

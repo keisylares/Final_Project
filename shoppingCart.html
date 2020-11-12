@@ -42,25 +42,6 @@
             <div class="shoppingCartDiv">
                 <h3>Shopping cart</h3>
                 <hr>
-<script language="javascript">
-  var max_id;
-  max_id = localStorage.getItem('id');
-  if (max_id) {
-    var id;
-    for (id = 0; id <= max_id; id++) {
-        document.write('<div id="itemsData">');
-        document.write('<img id="file" class="thumb" src="nopicture.png" alt="" width="100" height="100">');
-        document.write('<div class="productSpecs">');
-        document.write('<div id="productName" class="productName">'+localStorage.getItem('productName['+id+']')+'</div>');
-        document.write('<div id="productDescription" class="productDescription">'+localStorage.getItem('productDescription['+id+']')+'</div>');
-        document.write('<div id="productPrice" class="productPrice">R$ '+localStorage.getItem('productPrice['+id+']')+'</div>');
-        document.write('<input type="hidden" id="price_hidden['+id+']" value="'+localStorage.getItem('productPrice['+id+']')+'">');
-        document.write('</div>');
-        document.write('</div>');
-    }
-  }
-</script>
-                
                 <hr>
             </div>
             <div class="summaryDiv">
@@ -108,6 +89,7 @@
         </nav>
     </footer>
     <script src="listProducts.js"></script>
+    <script src="total.js"></script>
     <script language="javascript">
     updatePrices();
     </script>
