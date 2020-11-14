@@ -50,48 +50,32 @@
                 <div class="imgDiv">
                     <h2 class="product">Product image</h2>
                     <hr class="ProductImgHr">
-                    <img src="images.png" alt="" width="230px" height="230px">
-                    <input id="file" type='file' name="file" />
+                    <img id="output" src="images.png" alt="" width="230px" height="230px">
+                    <input id="file" type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
                 </div>
             </div>
             <hr class="mainHr">
             <div class="buttons">
-                <button onclick="clickedButton()" id="addToCart" class="addToCart" type="button">Submit</button>
+                <button onclick="clickedButton()" id="addToCart" class="addToCart" type="button">Add Product</button>
                 <button class="cancel">Cancel</button>
             </div>
         </form>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr>
+        
     </main>
     <footer>
+        <hr>
         <nav class="footerNav">
             <ul class="footerNav_ul">
-                <li class="navFooterLi"><a href="#">Home</a></li>
+                <li class="navFooterLi"><a class="footerA" href="#">Home</a></li>
                 <hr class="navFooterHr">
-                <li class="navFooterLi"><a href="#">About</a></li>
+                <li class="navFooterLi"><a class="footerA" href="#">About</a></li>
                 <hr class="navFooterHr">
-                <li class="navFooterLi"><a href="#">Shop</a></li>
+                <li class="navFooterLi"><a class="footerA" href="#">Shop</a></li>
                 <hr class="navFooterHr">
-                <li class="navFooterLi"><a href="#">Help</a></li>
+                <li class="navFooterLi"><a class="footerA" href="#">Help</a></li>
             </ul>
         </nav>
     </footer>
-    <script src="shoppingCart.js"></script>
+    <script src="productList.js"></script>
 </body>
-
 </html>

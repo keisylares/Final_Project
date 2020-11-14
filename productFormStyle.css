@@ -33,15 +33,23 @@ li a{
     background-color: grey;
     border-radius: 3px;
 }
+#newProductButton:hover{
+    background-color: rgb(170, 170, 170);
+}
 /* main section(form) */
+main{
+    margin-bottom: 10%;
+}
 .wholeProductBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-size: 20px;
     margin: 5% 18%;
 }
 .leftBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 label{
@@ -69,6 +77,9 @@ img{
 #file{
     width: 200px;
 }
+#addToCart{
+    margin-right: 1%;
+}
 .buttons{
     margin-top: 3%;
     margin-left: 17%;
@@ -79,9 +90,11 @@ button{
     border: none;
     outline: none;
     font-size: 1rem;
+    background-color: grey;
+    border-radius: 3px;
 }
 button:hover{
-    background-color: grey;
+    background-color:  rgb(170, 170, 170);
 }
 .mainHr{
     margin: 0% 18%;
@@ -96,9 +109,17 @@ footer{
     justify-content: space-between;
     margin: 2% 30%;
 }
+.navFooterLi{
+    margin-top: 11px;
+}
 .imgDiv{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+.navFooterHr{
+    height: 25px;
+    width: 1px;
+    background-color: rgb(206, 205, 205);  
 }
