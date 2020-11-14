@@ -51,7 +51,8 @@
                     <h2 class="product">Product image</h2>
                     <hr class="ProductImgHr">
                     <img id="output" src="images.png" alt="" width="230px" height="230px">
-                    <input id="file" type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+                    <input type="file" id="file" name="file" placeholder="Add an url img">
+                    <input type="hidden" id="img_b64" name="img_b64">
                 </div>
             </div>
             <hr class="mainHr">
@@ -75,6 +76,7 @@
                 <li class="navFooterLi"><a class="footerA" href="#">Help</a></li>
             </ul>
         </nav>
+        <spa> &copy; Lorem ipsum dolor sit.</span>
     </footer>
     <script src="productList.js"></script>
 </body>

@@ -192,3 +192,8 @@ footer{
 .total {
   font-weight: bold;
 }
+.quantity {
+    height: 15px;
+    width: 40px;
+    margin-left: 45%;
+}
